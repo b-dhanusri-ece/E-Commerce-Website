@@ -10,5 +10,4 @@ An online shopping platform where customers can browse, compare and purchase pro
 # Technology
 - HTML5
 - CSS
-- Javascript
 - Responsive Web Design
