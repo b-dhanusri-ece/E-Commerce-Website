@@ -1,0 +1,229 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --navbar-height:60px;
+}
+#logo img{
+    margin: 15px 20px;
+    height: 70px;
+}
+
+#navbar{
+    display: flex;
+    position: relative;
+    background-color: black;
+    align-items: center;
+    top: 1px;
+    
+}
+#navbar ul{
+    display: flex;
+}
+#navbar::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+#navbar ul li{
+    list-style: none;
+    font-size: 1rem;
+}
+#navbar ul li a{
+    display: block;
+    padding: 4px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    font-weight: 600px;
+}
+#navbar ul li a:hover{
+    color: black;
+    background-color: lightgoldenrodyellow;
+}
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 200px;
+    height: 500px;
+    justify-content: center;
+    align-items: center;
+}
+#home::before{
+    content: "";
+    background: url("../images/ar.png") no-repeat center center/cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 800px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.9;
+}
+#home h1{
+    color: black;
+    text-align: center;
+    font-size: 2.5rem;
+}
+#home p{
+    color:white;
+    text-align: center;
+    font-size: 1.2rem;
+    margin: 10px;
+    line-height: 25px;
+}
+.btn{
+    margin: 0px apx;
+    background-color: black;
+    color: white;
+    padding: 5px 10px;
+    border: 2px solid gray;
+    border-radius: 25px;
+    font-size: 20px;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: white;
+    color: black;
+}
+
+.center{
+    text-align: center;
+}
+
+#Services{
+    margin: 50px;
+    display: flex;
+}
+
+#Services .box{
+    border: 2px solid yellowgreen;
+    padding: 25px;
+    margin: 2px 4px;
+    border-radius: 10px;
+    background-color: lightyellow;
+    transition: all 0.8s ease-in-out;
+    transition-duration: 1s;
+    flex-direction: column;
+
+}
+
+#Services .box:hover{
+    transform: scale(0.9);
+    background-color: white;
+}
+
+#Services .box img{
+    height: 150px;
+    margin: auto;
+    display: block;
+}
+ 
+#Products-section{
+    position: relative;
+    margin-bottom: 35px;
+}
+#Products-section::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.9;
+    background: url("../images/key.jpg") no-repeat center center/cover;
+
+}
+#Products img{
+    height: 150px;
+    border-radius: 25px;
+    padding: 15px;
+}
+#item{
+
+    padding: 14px;
+}
+#Products{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#Products-section h1{
+    color: white;
+    align-items: center;
+    font-size: 2.5rem;
+}
+
+
+#Contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 75%;
+    z-index: -1;
+    opacity: 0.7;
+    background: url("../images/sim.jpg") no-repeat center center/cover;
+}
+#Contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+#Contact-box input,
+ #Contact-box textarea{
+
+    width: 100%;
+    padding: 1rem;
+    margin-top:10px;
+    border-radius: 25px;
+    font-size: 1.1rem;
+
+}
+#Contact-box form{
+    width: 40%;
+}
+.cbtn{
+    padding: 14px 31px;
+    border:2px solid white;
+    background-color: gray;
+    color: black;
+    margin: 17px;
+    width: 100%;
+    font-size: 1.0rem;
+    border-radius: 25px;
+    cursor: pointer;
+}
+.cbtn:hover{
+    background-color: black;
+    background: white;
+}
+.footer{
+    background-color: black;
+    color: white;
+    padding: 20px;
+    margin-bottom: 0px;
+}
+#Products img{
+    animation: guvi;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+@keyframes guvi{
+    0%{
+        transform: scale(1.1);
+    }
+    50%{
+        transform:scale(0.8);
+    }
+    260%{
+        transform:scale(180deg);
+    }
+    360%{
+        transform:scale(80deg);
+    }
+}
